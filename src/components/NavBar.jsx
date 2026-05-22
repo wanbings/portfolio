@@ -28,16 +28,16 @@ export const NavBar = () => {
         }`}>
 
             <div className="container flex items-center justify-between">
-                <a className="text-xl font-bold text-primary flex items-center" href="/">
+                <Link className="text-xl font-bold text-primary flex items-center" to="/">
                     <span className="relative z-10 text-foreground">jennifer luo</span>
-                </a>
+                </Link>
 
                 {/*desktop*/}
                 <div className="hidden md:flex items-center space-x-8 ">
                     {navItems.map((item,key) => (
-                        <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                        <Link key={key} to={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
                            {item.name} 
-                        </a>
+                        </Link>
                     ))}
                     <ThemeToggle />
                 </div>
@@ -58,14 +58,14 @@ export const NavBar = () => {
                 }`}>
                     <div className="flex flex-cola space-y-8 text-xl">
                         {navItems.map((item,key) => (
-                            <a 
+                            <Link 
                                 key={key} 
-                                href={item.href} 
+                                to={item.href} 
                                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                                 >
                             {item.name} 
-                            </a>
+                            </Link>
                         ))}
                         <ThemeToggle />
                     </div>
