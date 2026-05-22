@@ -15,7 +15,7 @@ const experiences = [
     },
     {
         id: 3,
-        role: "Lead Instructor",
+        role: "Instructor",
         company: "Mathnasium",
         date: "April 2023 - July 2025",
         description: "Instructed and mentored over 120 students in focused, small-group settings, breaking down abstract problem-solving methodologies and numerical reasoning through AP Calculus. Adapted real-time teaching styles to diverse technical learning paces to build core numerical fluency."
