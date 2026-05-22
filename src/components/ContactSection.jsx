@@ -4,7 +4,7 @@ export const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl ml-0 font-bold mb-12 text-left">
                 more of <span className="text-primary">me</span>
             </h2>
-            <div className="flex flex-row md:flex-row gap-12">
+            <div className="flex flex-row md:flex-row gap-12 overflow-x-auto whitespace-nowrap scrollbar-none">
                 <a href="https://www.linkedin.com/in/jenniferwluo" className="text-2xl text-foreground hover:text-primary transition-colors duration-300">
                     linkedin
                 </a>

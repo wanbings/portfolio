@@ -16,7 +16,7 @@ export const HeroSection = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-foreground/80 max-w-2xl ml-0 py-4 opacity-0 animate-fade-in-delay-3">
-                    i'm a <span className="font-bold text-primary">computer science & physics</span> student with experience in full-stack development and an interest in machine learning, embedded software, and 
+                    i'm a <span className="font-bold text-primary">computer science & physics</span> student with an interest in full-stack development, machine learning, embedded software, and 
                     the intersection of software and physical systems.
                 </p>
 

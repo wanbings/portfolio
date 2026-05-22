@@ -29,7 +29,7 @@ export const NavBar = () => {
 
             <div className="w-full px-6 md:px-12 flex items-center justify-between">
                 <Link className="text-xl font-bold text-primary flex items-center" to="/">
-                    <span className="relative z-10 text-foreground">jennifer luo</span>
+                    <span className="relative z-10">jennifer luo</span>
                 </Link>
 
                 {/*desktop*/}
@@ -56,7 +56,7 @@ export const NavBar = () => {
                 <div className={`fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden ${
                     isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                 }`}>
-                    <div className="flex flex-cola space-y-8 text-xl">
+                    <div className="flex flex-col space-y-8 text-xl">
                         {navItems.map((item,key) => (
                             <Link 
                                 key={key} 
