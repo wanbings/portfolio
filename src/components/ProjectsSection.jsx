@@ -4,7 +4,7 @@ const projects = [
         title: "Quad Keys",
         date: "April 2026",
         description: "An end-to-end full-stack platform that pairs an automated Python Selenium scraping engine (featuring anti-bot bypass frameworks) with a responsive React frontend for real-time aggregation and client-side filtering of regional real estate data.",
-        image: "/projects/quadkeys-img.png",
+        image: "projects/quadkeys-img.png",
         demoUrl: "https://docs.google.com/presentation/d/1AHCBvGJG2TVIUQRb3v_37drSwV5lcnD5Tu8CaBxb450/edit?usp=sharing",
         githubUrl: "https://github.com/wanbings/dev_ada"
     },
@@ -13,7 +13,7 @@ const projects = [
         title: "ReframeAPI",
         date: "February 2026",
         description: "AI-powered news analysis Chrome extension that strips political bias from articles to deliver objective, real-time summaries. Powered by a FastAPI backend and Google Gemini 2.5 Flash, the system architecture features an asynchronous web scraper built with BeautifulSoup4 and a lightweight Manifest V3 frontend.",
-        image: "/projects/reframe-img.png",
+        image: "projects/reframe-img.png",
         demoUrl: "https://devpost.com/software/reframe-723yho",
         githubUrl: "https://github.com/hethp/Reframe-API"
     },
@@ -22,7 +22,7 @@ const projects = [
         title: "ClassGPT",
         date: "October 2025",
         description: "Interactive Python and HTML chatbot designed to streamline academic course discovery. The platform processes raw course datasets and utilizes a custom conversational interface (chatbot.py) to map student queries to specific schedules and requirements, simplifying academic planning.",
-        image: "/projects/classgpt-img.png",
+        image: "projects/classgpt-img.png",
         demoUrl: "https://docs.google.com/presentation/d/19Z9enH4bbN6OrfiQsVIvZ8G4wZMq1evEnHVyIGTLC5g/edit?usp=sharing",
         githubUrl: "https://github.com/yogurtham/course-finder"
     },
@@ -31,7 +31,7 @@ const projects = [
         title: "X-Spot",
         date: "April 2024",
         description: "Web application simplifies the process of purchasing a bow through a step-by-step guided setup. The website walks users through complex product options with inline documentation, tracks cumulative component pricing in real time to prevent budget overruns, and generates a cohesive, itemized inventory list with precise total cost aggregations at the end of the user flow.",
-        image: "/projects/xspot-img.png",
+        image: "projects/xspot-img.png",
         demoUrl: "https://www.youtube.com/watch?v=kl-ikznkEPs",
     }
 ]
@@ -54,7 +54,7 @@ export const ProjectsSection = () => {
                             >
                                 <div className="w-full md:w-1/2 overflow-hidden rounded-lg border border-border bg-muted/30 aspect-[16/10]">
                                     <img 
-                                        src={project.image} 
+                                        src={`${import.meta.env.BASE_URL}${project.image}`} 
                                         alt={project.title} 
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" 
                                     />
