@@ -27,7 +27,7 @@ export const NavBar = () => {
             isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
         }`}>
 
-            <div className="container flex items-center justify-between">
+            <div className="w-full px-6 md:px-12 flex items-center justify-between">
                 <Link className="text-xl font-bold text-primary flex items-center" to="/">
                     <span className="relative z-10 text-foreground">jennifer luo</span>
                 </Link>
